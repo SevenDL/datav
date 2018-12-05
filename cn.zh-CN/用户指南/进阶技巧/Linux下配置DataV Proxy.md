@@ -2,7 +2,7 @@
 
 使用 DataV 数据代理服务，无需数据库打开权限，也无需编写 API，就可以配置更安全的数据查询。它将加密的 SQL 查询字符串和数据库 ID 值传递给应用程序，然后由该应用程序连接到数据库，获取查询结果并将其返回到 DataV 页面。
 
-单击[此处](https://files.alicdn.com/tpsservice/f85c426441caf7d0832f6639bed4dba2.zip)，下载示例应用程序，可将其部署到 ECS 实例中。
+单击[此处](https://files.alicdn.com/tpsservice/f85c426441caf7d0832f6639bed4dba2.zip)，下载示例应用程序，可将其部署到 ECS 实例中。在执行下面的步骤前，您需要首先准备好需要展示的MySQL数据库和表。
 
 您可以使用此 Node.js 示例应用程序，也可以开发一个新的应用程序，整体操作步骤如下：
 
@@ -55,13 +55,13 @@
     pm2 status
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154390890233646_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154398173033646_zh-CN.png)
 
     如果运行状态为**online**，说明该应用程序已成功激活，您可以继续执行以下操作：
 
     -   运行node ./bin/info.js命令，查看DataV Proxy的域名、端口、Key、Secret及配置的数据库信息。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154390890233650_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154398173033650_zh-CN.png)
 
         **说明：** 您需要保存此部分信息，在配置DataV数据源时会用到。
 
@@ -70,37 +70,50 @@
 
 ## 配置数据库 {#section_e1t_xfc_yfb .section}
 
-在DataVProxy-v0.3.2文件夹下，执行`vim config.js`，打开config.js文件，在 databases 数组中仿照示例增加数据库，如下所示。
+1.  [配置数据库白名单](https://help.aliyun.com/document_detail/64686.html)，并授权远程连接。
+2.  在DataVProxy-v0.3.2文件夹下，执行`vim config.js`，打开config.js文件，在 databases 数组中仿照示例增加数据库，如下所示。
 
-```
-databases: [
-    {
-      id: 'test',        // 确保没有任何重复的 ID。然后将其填充到 DataV 后端“数据库”字段中。 
-      type: 'mysql',     // rds, ads
-      host: '127.0.0.1', // 域名和 IP 地址
-      user: 'root',      // 用户名
-      password: 'root',  // 密码
-      database: 'test',  // 数据库名称
-      port: 3306         // 端口
-    },
-    {
-      // ... 
-    },
-    // ...在这里填写您要添加的数据库。 
-  ]
-```
+    ```
+    databases: [
+        {
+          id: 'test',        // 确保没有任何重复的 ID。然后将其填充到 DataV 后端“数据库”字段中。 
+          type: 'mysql',     // rds, ads
+          host: '127.0.0.1', // 域名和 IP 地址
+          user: 'root',      // 用户名
+          password: 'root',  // 密码
+          database: 'test',  // 数据库名称
+          port: 3306         // 端口
+        },
+        {
+          // ... 
+        },
+        // ...在这里填写您要添加的数据库。 
+      ]
+    ```
 
-## 配置到 DataV {#section_mpz_xfc_yfb .section}
+3.  配置完成后，分别执行如下命令，重启MySQL数据库及DataV Proxy应用程序。
 
-1.  在DataV控制台上，选择**我的数据** \> **添加数据**。
-2.  在**新建数据**页面，选择**类型**为**DataV数据代理服务**。
-3.  将上文中红框中的信息填入下图的输入框中，参数详情请参考[DataV 数据代理服务](cn.zh-CN/用户指南/管理数据源/添加数据源/DataV 数据代理服务.md#)。
+    ```
+    systemctl restart mysqld.service
+    ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15439089029303_zh-CN.png)
+    ```
+    pm2 restart 0
+    ```
 
-4.  在项目的数据配置中，选择**数据源类型**为**数据库**，数据库选择上图自定义的数据源。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15439089028648_zh-CN.png)
+## 配置到DataV {#section_mpz_xfc_yfb .section}
+
+1.  使用HTTP协议进入[DataV控制台](http://datav.aliyun.com)。
+2.  选择**我的数据** \> **添加数据**。
+3.  在**新建数据**页面，选择**类型**为**DataV数据代理服务**。
+4.  将上文中红框中的信息填入下图的输入框中，参数详情请参考[DataV 数据代理服务](cn.zh-CN/用户指南/管理数据源/添加数据源/DataV 数据代理服务.md#)。
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15439817309303_zh-CN.png)
+
+5.  在项目的数据配置中，选择**数据源类型**为**数据库**，数据库选择上图自定义的数据源。
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15439817318648_zh-CN.png)
 
 
 **说明：** 
