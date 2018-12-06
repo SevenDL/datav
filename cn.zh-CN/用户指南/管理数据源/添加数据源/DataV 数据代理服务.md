@@ -4,11 +4,16 @@
 
 ## 操作步骤 {#section_eng_2hr_p2b .section}
 
-1.  进入[DataV控制台](https://datav.aliyun.com/)，选择**我的数据** \> **添加数据**。
+1.  使用HTTP协议进入[DataV控制台](http://datav.aliyun.com/)，选择**我的数据** \> **添加数据**。
 2.  单击**类型**下拉箭头，选择数据库类型为 **DataV 数据代理服务**。
+
+    **说明：** 
+
+    -   该服务 SDK 只提供 HTTP 服务。如果您需要使用 HTTPS 服务，则需要申请一个 Chrome 认可的 HTTPS 证书，申请方法请在谷歌浏览器中搜索。
+    -   在有 HTTPS 服务之前，请确保 DataV 页面是使用 HTTP 协议打开的。（该策略可确保 HTTPS 网站的安全）
 3.  填写数据库信息。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16538/15439988877911_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16538/15440814687911_zh-CN.png)
 
     -   名称：数据源的显示名称，可以自由命名。
     -   域名：您服务器的IP地址，如果您使用的是ECS服务器，则应该配置为ECS服务器的公网IP。
