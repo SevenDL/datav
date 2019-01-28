@@ -8,7 +8,7 @@
 2.  单击**类型**下拉菜单，选择数据库类型为**TableStore**。
 3.  填写Table Store相关信息，如下图所示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154518925032624_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154864339832624_zh-CN.png)
 
     -   **名称**：数据源的显示名称，您可以自由命名。
     -   **AK ID**：拥有TableStore访问权限的账号的 AccessKey ID。
@@ -60,7 +60,7 @@
         
         {
         "table_name": "test",
-        "direction": "FORWORD",
+        "direction": "FORWARD",
         "columns": [
         "id",
         "test"
@@ -95,29 +95,29 @@
 
      您需要先在[TableStore控制台](https://ots.console.aliyun.com/)[创建实例](https://help.aliyun.com/document_detail/55211.html)并[存储数据](https://help.aliyun.com/document_detail/55220.html)。如下图建立了一个实例名为 test1948 的实例，里面有 3 行数据，每行数据有两个列：id\(主键, integer\)， test\(string\)。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154518925032810_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154864339832810_zh-CN.png)
 
 2.  配置数据源。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154518925032811_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154864339932811_zh-CN.png)
 
 3.  查询参数。
 
     -   getRow：
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154518925032812_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154864339932812_zh-CN.png)
 
         数据响应结果如下图所示：
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154518925032813_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154864339932813_zh-CN.png)
 
     -   getRange：
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154518925132814_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154864339932814_zh-CN.png)
 
         数据响应结果如下图所示：
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154518925132815_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/154864339932815_zh-CN.png)
 
     **说明：** 在查询getRange参数的时候，过滤条件start为id：InfMin，end为id：3，最后查出来id为1和2两行记录，因为getRange并不包含end的行，即不包含id为3的行。
 
