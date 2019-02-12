@@ -55,13 +55,13 @@ To purchase a cost-effective ECS server, we recommend you:
     pm2 status
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154408154333646_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154995215833646_en-US.png)
 
     If the running status is **online**, it indicates that the application is activated successfully, and you can continue with the following steps:
 
     -   Implement node ./bin/info.js to view the domain name, port, Key, Secret, and configured database information of the Data proxy.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154408154333650_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154995215833650_en-US.png)
 
         **Note:** You need to save the information that is used when configuring a Datav data source.
 
@@ -70,7 +70,7 @@ To purchase a cost-effective ECS server, we recommend you:
 
 ## Configure the database {#section_e1t_xfc_yfb .section}
 
-1.  [Database whitelist settings](reseller.en-US/User Guide/Manage data sources/Database whitelist settings.md#)and authorize remote connections.
+1.  [Database whitelist settings](intl.en-US/User Guide/Manage data sources/Database whitelist settings.md#) and authorize remote connections.
 2.  In the DataVProxy-v0.3.2 folder, implement `vim config.js`, open config.js, and add a database to the database filed , as shown in the following example.
 
     ```
@@ -104,16 +104,16 @@ To purchase a cost-effective ECS server, we recommend you:
 
 ## Configure the data source to DataV {#section_mpz_xfc_yfb .section}
 
-1.  Use the HTTP protocol to enter the [DataV console](http://partners-intl.console.aliyun.com/#/datav).
+1.  Use the HTTP protocol to enter the [DataV console](http://datav.alibabacloud.com/).
 2.  Select **Data Sources** \> **Add Source**.
 3.  On the **New Data Source** page, go to the **Type** drop-down list and select **DataV Data Proxy Service**.
-4.  Enter the information from the previous Deployment section \(outlined in red\) into the following input box. For more information about the parameters, see [Add DataV Data Proxy Service](reseller.en-US/User Guide/Manage data sources/Add data sources/Add DataV Data Proxy Service.md#).
+4.  Enter the information from the previous Deployment section \(outlined in red\) into the following input box. For more information about the parameters, see [Add DataV Data Proxy Service](intl.en-US/User Guide/Manage data sources/Add data sources/Add DataV Data Proxy Service.md#).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15440815439303_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15499521589303_en-US.png)
 
 5.  In the data settings field, go to **Data Source Type** and select **Database**. Custom the data source based on the preceding figure.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15440815448648_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15499521588648_en-US.png)
 
 
 **Note:** 
