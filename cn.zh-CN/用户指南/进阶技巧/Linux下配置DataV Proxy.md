@@ -2,7 +2,7 @@
 
 使用 DataV 数据代理服务，无需数据库打开权限，也无需编写 API，就可以配置更安全的数据查询。它将加密的 SQL 查询字符串和数据库 ID 值传递给应用程序，然后由该应用程序连接到数据库，获取查询结果并将其返回到 DataV 页面。
 
-单击[此处](https://files.alicdn.com/tpsservice/f85c426441caf7d0832f6639bed4dba2.zip)，下载示例应用程序，可将其部署到 ECS 实例中。在执行下面的步骤前，您需要首先准备好需要展示的MySQL数据库和表。
+单击[此处](https://files.alicdn.com/tpsservice/3b30abf1b9f8a2056cc135d2a6587bb9.zip)，下载示例应用程序，可将其部署到 ECS 实例中。在执行下面的步骤前，您需要首先准备好需要展示的MySQL数据库和表。
 
 您可以使用此 Node.js 示例应用程序，也可以开发一个新的应用程序，整体操作步骤如下：
 
@@ -26,9 +26,8 @@
 1.  执行如下命令，下载DataV Proxy示例应用程序并解压：
 
     ```
-    wget https://files.alicdn.com/tpsservice/f85c426441caf7d0832f6639bed4dba2.zip
-    unzip f85c426441caf7d0832f6639bed4dba2.zip
-    cd DataVProxy-v0.3.2
+    wget https://files.alicdn.com/tpsservice/3b30abf1b9f8a2056cc135d2a6587bb9.zip
+    cd {解压之后的目录}
     ```
 
     **说明：** 如果系统显示**unzip command is not found**，您需要首先执行`yum install unzip`，安装unzip命令，再次执行。
@@ -55,13 +54,13 @@
     pm2 status
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154408153833646_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155013554033646_zh-CN.png)
 
     如果运行状态为**online**，说明该应用程序已成功激活，您可以继续执行以下操作：
 
     -   运行node ./bin/info.js命令，查看DataV Proxy的域名、端口、Key、Secret及配置的数据库信息。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/154408153833650_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155013554033650_zh-CN.png)
 
         **说明：** 您需要保存此部分信息，在配置DataV数据源时会用到。
 
@@ -70,8 +69,8 @@
 
 ## 配置数据库 {#section_e1t_xfc_yfb .section}
 
-1.  [配置数据库白名单](ZH-CN_TP_19037.dita#concept_hcq_ymz_q2b)，并授权远程连接。
-2.  在DataVProxy-v0.3.2文件夹下，执行`vim config.js`，打开config.js文件，在 databases 数组中仿照示例增加数据库，如下所示。
+1.  [配置数据库白名单](ZH-CN_TP_16588.dita#concept_hcq_ymz_q2b)，并授权远程连接。
+2.  在`{DataVProxy 所在目录}`下，执行`vim config.js`，打开config.js文件，在 databases 数组中仿照示例增加数据库，如下所示。
 
     ```
     databases: [
@@ -104,16 +103,16 @@
 
 ## 配置到DataV {#section_mpz_xfc_yfb .section}
 
-1.  使用HTTP协议进入[DataV控制台](http://datav.alibabacloud.com/)。
+1.  使用HTTP协议进入[DataV控制台](http://datav.aliyun.com)。
 2.  选择**我的数据** \> **添加数据**。
 3.  在**新建数据**页面，选择**类型**为**DataV数据代理服务**。
-4.  将上文中红框中的信息填入下图的输入框中，参数详情请参考[DataV 数据代理服务](intl.zh-CN/用户指南/管理数据源/添加数据源/DataV 数据代理服务.md#)。
+4.  将上文中红框中的信息填入下图的输入框中，参数详情请参考[DataV 数据代理服务](cn.zh-CN/用户指南/管理数据源/添加数据源/DataV 数据代理服务.md#)。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15440815389303_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15501355479303_zh-CN.png)
 
 5.  在项目的数据配置中，选择**数据源类型**为**数据库**，数据库选择上图自定义的数据源。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15440815388648_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15501355478648_zh-CN.png)
 
 
 **说明：** 
@@ -132,7 +131,7 @@
 -   执行如下命令，检查历史日志。
 
     ```
-    ls -al ./DataVProxy-master/logs
+    ls -al ./{DataVProxy 所在目录}/logs
     ```
 
 -   执行如下命令，重启服务器。
