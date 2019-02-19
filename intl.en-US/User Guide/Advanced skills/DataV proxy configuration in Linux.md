@@ -2,7 +2,7 @@
 
 With DataV data proxy services, you can configure safer data queries without the need to apply database permissions or write APIs. The DataV data proxy services pass encrypted SQL query strings and database ID values to applications that can connect to the database, get query results, and return the results to the DataV page.
 
-Click [here](https://files.alicdn.com/tpsservice/f85c426441caf7d0832f6639bed4dba2.zip) to download a sample application published on GitHub. The application can be deployed to an ECS instance. Before performing the following procedure, you need to prepare the MySQL database and tables that need to be displayed.
+Click [here](https://files.alicdn.com/tpsservice/3b30abf1b9f8a2056cc135d2a6587bb9.zip) to download a sample application published on GitHub. The application can be deployed to an ECS instance. Before performing the following procedure, you need to prepare the MySQL database and tables that need to be displayed.
 
 The following procedure uses a Node.js sample application, or you can use a new developed application.
 
@@ -26,9 +26,9 @@ To purchase a cost-effective ECS server, we recommend you:
 1.  Implement the following commands to download the DataV proxy sample application and extract it.
 
     ```
-    wget https://files.alicdn.com/tpsservice/f85c426441caf7d0832f6639bed4dba2.zip
-    unzip f85c426441caf7d0832f6639bed4dba2.zip
-    cd DataVProxy-v0.3.2
+    wget https://files.alicdn.com/tpsservice/3b30abf1b9f8a2056cc135d2a6587bb9.zip
+    unzip 3b30abf1b9f8a2056cc135d2a6587bb9.zip
+    cd {decompressed directory}
     ```
 
     **Note:** If the system displays **unzip command is not found**, you need to first implement `yum install unzip` and then continue the following commands.
@@ -43,7 +43,7 @@ To purchase a cost-effective ECS server, we recommend you:
     npm install --registry=https://registry.npm.taobao.org
     ```
 
-3.  Implement the following command to run the DataV Proxy sample application.
+3.  Implement the following command to run the DataV proxy sample application.
 
     ```
     pm2 start app.js
@@ -55,23 +55,23 @@ To purchase a cost-effective ECS server, we recommend you:
     pm2 status
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155045930733646_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155055855133646_en-US.png)
 
     If the running status is **online**, it indicates that the application is activated successfully, and you can continue with the following steps:
 
     -   Implement node ./bin/info.js to view the domain name, port, Key, Secret, and configured database information of the Data proxy.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155045930733650_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155055855133650_en-US.png)
 
-        **Note:** You need to save the information that is used when configuring a Datav data source.
+        **Note:** You need to save the information that is used when configuring a DataV data source.
 
     -   To change the Key, use node ./bin/genkv.js to generate a new one.
     -   Access `http://domain name:port/status` to verify server status. The domain name is the public network IP of your ECS instance. The port is the port you have identified, which usually is `9998`.
 
 ## Configure the database {#section_e1t_xfc_yfb .section}
 
-1.  [Database whitelist settings](intl.en-US/User Guide/Manage data sources/Database whitelist settings.md#) and authorize remote connections.
-2.  In the DataVProxy-v0.3.2 folder, implement `vim config.js`, open config.js, and add a database to the database filed , as shown in the following example.
+1.  [Database whitelist settings](reseller.en-US/User Guide/Manage data sources/Database whitelist settings.md#) and authorize remote connections.
+2.  In the directory where DataVProxy is located, implement `vim config.js`, open config.js, and add a database to the database filed , as shown in the following example.
 
     ```
     databases: [
@@ -91,7 +91,7 @@ To purchase a cost-effective ECS server, we recommend you:
       ]
     ```
 
-3.  After the configuration is complete, perform the following commands separately and restart the MySQL database and the datav proxy application.
+3.  After the configuration is complete, perform the following commands separately and restart the MySQL database and the DataV proxy application.
 
     ```
     systemctl restart mysqld.service
@@ -104,16 +104,16 @@ To purchase a cost-effective ECS server, we recommend you:
 
 ## Configure the data source to DataV {#section_mpz_xfc_yfb .section}
 
-1.  Use the HTTP protocol to enter the [DataV console](http://datav.alibabacloud.com/).
+1.  Use the HTTP protocol to enter the [DataV console](http://partners-intl.console.aliyun.com/#/datav).
 2.  Select **Data Sources** \> **Add Source**.
 3.  On the **New Data Source** page, go to the **Type** drop-down list and select **DataV Data Proxy Service**.
-4.  Enter the information from the previous Deployment section \(outlined in red\) into the following input box. For more information about the parameters, see [Add DataV Data Proxy Service](intl.en-US/User Guide/Manage data sources/Add data sources/Add DataV Data Proxy Service.md#).
+4.  Enter the information from the previous Deployment section \(outlined in red\) into the following input box. For more information about the parameters, see [Add DataV Data Proxy Service](reseller.en-US/User Guide/Manage data sources/Add data sources/Add DataV Data Proxy Service.md#).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15504593079303_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15505585519303_en-US.png)
 
 5.  In the data settings field, go to **Data Source Type** and select **Database**. Custom the data source based on the preceding figure.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15504593078648_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15505585518648_en-US.png)
 
 
 **Note:** 
@@ -132,7 +132,7 @@ To purchase a cost-effective ECS server, we recommend you:
 -   Check history logs
 
     ```
-    ls -al . /DataVProxy-master/logs
+    ls -al . /{the directory where DataVProxy is located}/logs
     ```
 
 -   Restart

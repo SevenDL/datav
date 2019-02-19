@@ -27,6 +27,7 @@
 
     ```
     wget https://files.alicdn.com/tpsservice/3b30abf1b9f8a2056cc135d2a6587bb9.zip
+    unzip 3b30abf1b9f8a2056cc135d2a6587bb9.zip
     cd {解压之后的目录}
     ```
 
@@ -54,13 +55,13 @@
     pm2 status
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155013554033646_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155055854633646_zh-CN.png)
 
     如果运行状态为**online**，说明该应用程序已成功激活，您可以继续执行以下操作：
 
     -   运行node ./bin/info.js命令，查看DataV Proxy的域名、端口、Key、Secret及配置的数据库信息。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155013554033650_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/155055854633650_zh-CN.png)
 
         **说明：** 您需要保存此部分信息，在配置DataV数据源时会用到。
 
@@ -69,8 +70,8 @@
 
 ## 配置数据库 {#section_e1t_xfc_yfb .section}
 
-1.  [配置数据库白名单](ZH-CN_TP_16588.dita#concept_hcq_ymz_q2b)，并授权远程连接。
-2.  在`{DataVProxy 所在目录}`下，执行`vim config.js`，打开config.js文件，在 databases 数组中仿照示例增加数据库，如下所示。
+1.  [配置数据库白名单](ZH-CN_TP_19037.dita#concept_hcq_ymz_q2b)，并授权远程连接。
+2.  在DataVProxy 所在目录下，执行`vim config.js`，打开config.js文件，在 databases 数组中仿照示例增加数据库，如下所示。
 
     ```
     databases: [
@@ -103,16 +104,16 @@
 
 ## 配置到DataV {#section_mpz_xfc_yfb .section}
 
-1.  使用HTTP协议进入[DataV控制台](http://datav.aliyun.com)。
+1.  使用HTTP协议进入[DataV控制台](http://datav.alibabacloud.com/)。
 2.  选择**我的数据** \> **添加数据**。
 3.  在**新建数据**页面，选择**类型**为**DataV数据代理服务**。
-4.  将上文中红框中的信息填入下图的输入框中，参数详情请参考[DataV 数据代理服务](cn.zh-CN/用户指南/管理数据源/添加数据源/DataV 数据代理服务.md#)。
+4.  将上文中红框中的信息填入下图的输入框中，参数详情请参考[DataV 数据代理服务](intl.zh-CN/用户指南/管理数据源/添加数据源/DataV 数据代理服务.md#)。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15501355479303_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15505585469303_zh-CN.png)
 
 5.  在项目的数据配置中，选择**数据源类型**为**数据库**，数据库选择上图自定义的数据源。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15501355478648_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16583/15505585468648_zh-CN.png)
 
 
 **说明：** 
