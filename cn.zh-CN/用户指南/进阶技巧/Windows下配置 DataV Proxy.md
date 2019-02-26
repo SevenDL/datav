@@ -26,7 +26,7 @@ DataV Proxy 源码地址：[https://files.alicdn.com/tpsservice/3b30abf1b9f8a205
     2.  选择安装管理页面左侧的 **All Packages**。
     3.  勾选右侧列表 **Package** 下的 **mingw32-base**、**mingw32-gcc-g++** 和 **mingw32-make**，右键选择 **Mark for Installation**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16586/15501355618517_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16586/15511695698517_zh-CN.png)
 
     4.  在菜单栏选择 **Installation** \> **Apply Changes** 安装需要的组件。
 3.  配置环境变量。
@@ -43,7 +43,7 @@ DataV Proxy 源码地址：[https://files.alicdn.com/tpsservice/3b30abf1b9f8a205
 
     4.  打开 Windows 的cmd命令行界面，执行 echo %PATH% 命令查看，结果如下图所示。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16586/15501355618519_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16586/15511695698519_zh-CN.png)
 
 
 ## 部署代码并启动服务 {#section_wdd_pf5_q2b .section}
@@ -52,7 +52,7 @@ DataV Proxy 源码地址：[https://files.alicdn.com/tpsservice/3b30abf1b9f8a205
 2.  [下载](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/93236/cn_zh/1543211821650/Makefile.zip)Makefile文件替换掉步骤一中解压后的文件目录中的 makefile 文件。
 3.  打开 Windows 的 cmd 命令行界面，切换到步骤一解压后的目录中，执行 mingw32-make 命令，如下图所示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16586/15501355618521_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16586/15511695698521_zh-CN.png)
 
 
 验证以及数据库的配置请参考[DataV 数据代理协议配置](cn.zh-CN/用户指南/进阶技巧/Linux下配置DataV Proxy.md#)。
