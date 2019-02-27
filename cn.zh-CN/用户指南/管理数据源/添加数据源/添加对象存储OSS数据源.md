@@ -1,6 +1,6 @@
 # 添加对象存储OSS数据源 {#concept_bgl_qcv_vfb .concept}
 
-[阿里云对象存储服务](https://www.aliyun.com/product/oss)（Object Storage Service，简称OSS）为您提供基于网络的数据存取服务。使用OSS，您可以通过网络随时存储和调用文本、图片、音频和视频等各种非结构化数据文件。
+[阿里云对象存储服务](../../../../../cn.zh-CN/产品简介/什么是对象存储 OSS.md#)（Object Storage Service，简称OSS）为您提供基于网络的数据存取服务。使用OSS，您可以通过网络随时存储和调用文本、图片、音频和视频等各种非结构化数据文件。
 
 ## 操作步骤 {#section_lnc_fgq_p2b .section}
 
@@ -8,14 +8,14 @@
 2.  单击**类型**下拉菜单，选择数据库类型为**对象存储 OSS**。
 3.  填写OSS相关信息，如下图所示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64454/154518923532329_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64454/155125294332329_zh-CN.png)
 
     -   **名称**：数据源的显示名称，您可以自由命名。
     -   **AK ID**：拥有目标OSS访问权限的账号的AccessKey ID。
     -   **AK Secret** ：拥有目标OSS访问权限的账号的AccessKey Secret 。
     -   **Region** ：目标OSS的Region信息，您可以进入[OSS控制台](https://oss.console.aliyun.com/)，单击您的Bucket名称进行获取。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64454/154518923532341_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64454/155125294332341_zh-CN.png)
 
         上图中的OSS Bucket位于上海区域，所以**region**填写为**oss-cn-shanghai**。
 
