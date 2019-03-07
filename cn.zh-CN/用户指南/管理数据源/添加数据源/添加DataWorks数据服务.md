@@ -2,11 +2,11 @@
 
 本文为您展示了如何在DataV中添加**DataWorks数据服务**数据源，并将通过DataWorks数据表生成的API，快速地展示在DataV可视化大屏中。
 
-**DataWorks 数据服务生成的 API 默认不支持 https 协议，所以请您在 http 协议下打开 DataV，即单击[http://datav.aliyun.com](http://datav.aliyun.com/) 打开 DataV。**
+**说明：** 
 
-**如果您需要在 https 协议下使用 DataWorks 数据服务生成的 API，请绑定证书到 API 网关，详细绑定过程请参考 [https://help.aliyun.com/knowledge\_detail/42126.html](https://help.aliyun.com/knowledge_detail/42126.html)** 。
-
-**说明：** 用户可以自己配置网关的限流，如果用户直接使用API网关的二级域名，会有一天限流1000次，需要用户到API网关中绑定独立域名。
+-   **DataWorks 数据服务生成的 API 默认不支持 https 协议，所以请您在 http 协议下打开 DataV，即单击[http://datav.aliyun.com](http://datav.aliyun.com/) 打开 DataV。**
+-   **如果您需要在 https 协议下使用 DataWorks 数据服务生成的 API，请绑定证书到 API 网关，详细绑定过程请参考[https://help.aliyun.com/knowledge\_detail/42126.html](https://help.aliyun.com/knowledge_detail/42126.html) 。**
+-   **DataWorks 数据服务生成的 API 发布后会对接到 API 网关，直接使用 API 网关默认提供的二级域名会有每天限流1000次的限制，您可以在 [API 网关控制台](http://apigateway.console.aliyun.com)中为分组绑定独立域名来解除限流限制。**
 
 ## 操作步骤 {#section_eng_2hr_p2b .section}
 
@@ -14,7 +14,7 @@
 2.  单击**类型**下拉箭头，选择数据类型为 **DataWorks 数据服务**。
 3.  在添加数据对话框中填写DataWorks 数据服务项目信息。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/117723/155167995937989_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/117723/155192799137989_zh-CN.png)
 
     -   **自定义数据源名称**：数据源的显示名称，可以自由命名。
     -   **项目**：DataWorks项目（工作空间）。
@@ -24,7 +24,7 @@
 
     获取**AppKey**和**AppSecret**：在[DataWorks数据服务控制台](http://ds-cn-shanghai.data.aliyun.com)中，单击**服务管理** \> **API调用**，可获取您的**AppKey**和**AppSecret**，如下图所示：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/117723/155167995937990_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/117723/155192799137990_zh-CN.png)
 
 4.  测试成功后，单击**确定**，完成数据源添加。
 
@@ -36,7 +36,7 @@
 2.  在DataV控制台上，单击**我的可视化**，选择您的项目，单击**编辑**，进入大屏编辑界面。
 3.  单击选择某一组件，在数据面板中，选择**数据源类型**为**DataWorks 数据服务**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/117723/155167995937992_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/117723/155192799137992_zh-CN.png)
 
 4.  单击**选择已有数据源**下拉菜单，选择您已经添加的DataWorks 数据服务数据源 。
 5.  在下方**选择API**下拉框中，单击下拉箭头选择第一步中生成的DataWorks数据服务API 。
