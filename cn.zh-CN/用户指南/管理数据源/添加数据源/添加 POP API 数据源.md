@@ -10,16 +10,14 @@ POP API（也称 OPEN API）是阿里云提供的云产品开放接口的调用�
 2.  单击**类型**下拉菜单，选择数据库类型为**POP API**。
 3.  填写POP API相关信息，如下图所示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64884/154518927232819_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64884/155599904832819_zh-CN.png)
 
     -   **名称**：数据源的显示名称，您可以自由命名。
-    -   **EndPoint**：POP API的服务地址，需要您从云产品的API文档处获取。比如ECS的[中心服务地址](https://help.aliyun.com/document_detail/25489.html)为 `ecs.aliyuncs.com`，云监控的杭州region的[服务地址](https://help.aliyun.com/document_detail/28616.html)为`metrics.cn-hangzhou.aliyuncs.com`。
-    -   **APIVersion**：云产品的API版本，您可以从云产品的API文档获取，如云监控的 [API 版本](https://help.aliyun.com/document_detail/28616.html)为`2017-03-01`。
+    -   **EndPoint**：POP API的服务地址，需要您从云产品的API文档处获取。比如ECS的[中心服务地址](../../../../cn.zh-CN/API参考/快速入门/请求结构.md#)为 `ecs.aliyuncs.com`，云监控的杭州region的[服务地址](../../../../cn.zh-CN/API参考/调用API.md#)为`metrics.cn-hangzhou.aliyuncs.com`。
+    -   **APIVersion**：云产品的API版本，您可以从云产品的API文档获取，如云监控的 [API 版本](../../../../cn.zh-CN/API参考/调用API.md#)为`2017-03-01`。
     -   **AppKey**：您可以调用POP API的账号的AccessKey ID。
     -   **AppSecret**：您可以调用POP API的账号的AccessKey Secret。
-    数据库信息填写完成后，系统会自动进行测试连接，验证能否正常连通。
-
-4.  测试连接成功后，单击**确认**保存，完成数据源添加。
+4.  信息填写完成后，单击**确认**保存，完成数据源添加。
 
     新添加的数据源会自动显示在数据源列表中。
 
@@ -71,7 +69,7 @@ POP API（也称 OPEN API）是阿里云提供的云产品开放接口的调用�
     -   查询参数为 POP API 的接口参数，以 JSON 对象的形式填写。
     -   参数名参考云产品 API 的入参说明。
     -   回调 id 在 JSON 对象的 value 中填写。
-    以云监控的[QueryMetricList](https://help.aliyun.com/document_detail/51936.html) API为例：
+    以云监控的[QueryMetricList](../../../../cn.zh-CN/API参考/云产品时序指标类监控数据/DescribeMetricList.md#) API为例：
 
     ```
     // 使用回调 id: myInstanceId
