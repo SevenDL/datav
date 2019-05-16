@@ -13,7 +13,7 @@
     -   在有 HTTPS 服务之前，请确保 DataV 页面是使用 HTTP 协议打开的。（该策略可确保 HTTPS 网站的安全）
 3.  填写数据库信息。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16538/15505399837911_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16538/15579747807911_zh-CN.png)
 
     -   名称：数据源的显示名称，可以自由命名。
     -   域名：您服务器的IP地址，如果您使用的是ECS服务器，则应该配置为ECS服务器的公网IP。
@@ -21,7 +21,7 @@
     -   Key：下载并安装好代码包后，系统会自动生成 Key。
     -   Secret：下载并安装好代码包后，系统会自动生成 Secret。
 
-        获取 Key 和 Secret，请参阅[Linux下配置 DataV Proxy](cn.zh-CN/用户指南/进阶技巧/Linux下配置DataV Proxy.md#)。
+        获取 Key 和 Secret，请参阅[DataV Proxy 使用说明](cn.zh-CN/用户指南/进阶技巧/DataV Proxy 使用说明.md#)。
 
     -   数据库：当前所选数据库的名称。
     数据库信息填写完成后，系统会自动进行测试连接，验证数据库是否能连通正常。
