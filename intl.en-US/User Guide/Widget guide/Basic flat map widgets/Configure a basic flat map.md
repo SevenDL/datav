@@ -4,7 +4,7 @@ This topic describes how to configure the style, data, and interaction of a basi
 
 ## Configure the configuration plane {#section_iwt_435_q2b .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/15580863558528_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/15583360148528_en-US.png)
 
 -   **Component Management**
     -   To add a widget, follow these steps:
@@ -16,12 +16,12 @@ This topic describes how to configure the style, data, and interaction of a basi
 
         4.  Click a widget and configure the widget parameters, as shown in the following figure.
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/15580863558531_en-US.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/15583360158531_en-US.png)
 
         5.  Go back to the configuration plane of the basic flat map to configure other widgets.
-    -   In the **Component Management** area, you can click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/155808635539964_en-US.png) to copy a widget, click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/155808635539965_en-US.png) to rename a widget, or click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/155808635639966_en-US.png) to delete a widget.
+    -   In the **Component Management** area, you can click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/155833601539964_en-US.png) to copy a widget, click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/155833601539965_en-US.png) to rename a widget, or click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/155833601539966_en-US.png) to delete a widget.
 
-        **Note:** For more information about how to manage widgets, see [Manage child widgets of a map widget](intl.en-US/User Guide/Manage widgets/Manage child widgets of a map widget.md#).
+        **Note:** For more information about how to manage widgets, see [Manage child widgets of a map widget](reseller.en-US/User Guide/Manage widgets/Manage child widgets of a map widget.md#).
 
 -   **Basic Attributes**
 
@@ -30,7 +30,7 @@ This topic describes how to configure the style, data, and interaction of a basi
     -   **Others**: Set the rotation angle and opacity of the widget.
 -   **Global Options**: Set the map parameters, including the background color, zoom level, longitude and latitude of the map center, and scale ruler.
 
-    -   **Background**: Set the background color of the map. For more information, see [Color picker](intl.en-US/User Guide/Manage widgets/Set widget styles/Configure item description.md#section_kdw_vj4_t2b).
+    -   **Background**: Set the background color of the map. For more information, see [Color picker](reseller.en-US/User Guide/Manage widgets/Set widget styles/Configure item description.md#section_kdw_vj4_t2b).
     -   **Zoom level**: Adjust the zoom level by dragging the slider or entering a zoom value.
 
         **Note:** The value of the zoom level can be a whole or decimal value.
@@ -42,7 +42,7 @@ This topic describes how to configure the style, data, and interaction of a basi
     -   **Interactive**: Select this check box to enable the interaction function. When you preview a widget or after you release a widget, you can click an area to view the data of this area.
     **Note:** You can also adjust the map center point and zoom level by configuring the data source.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/15580863568529_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/15583360158529_en-US.png)
 
     The following is an example of data in the data source:
 
@@ -59,7 +59,7 @@ This topic describes how to configure the style, data, and interaction of a basi
 
 ## Configure the data plane {#section_amg_cj5_q2b .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/15580863568530_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16572/15583360158530_en-US.png)
 
 -   zoom: Optional. Set the zoom level of the map. The zoom field corresponds to the **Zoom Level** field on the **Configuration** tab. If you set the zoom level for both zoom and **Zoom Level**, the value of zoom is used.
 -   lng: Optional. Set the longitude of the map center. The lng field corresponds to the **Longitude** field on the **Configuration** tab. If you set the longitude for both lng and **Longitude**, the value of lng is used.
@@ -69,5 +69,5 @@ This topic describes how to configure the style, data, and interaction of a basi
 
 The basic flat map does not support the configuration of callback IDs.
 
-However, some child widgets, such as the choropleth layer, region drill-down heat layer, line layer, and scatter layer, support callback IDs. The configuration of callback IDs allows you to implement map interactions. For more information, see [Configure widget interaction](intl.en-US/User Guide/Manage widgets/Configure widget interaction.md#) and [Configure callback IDs for ticker boards](../intl.en-US/Best Practices/Configure callback IDs for ticker boards.md#).
+However, some child widgets, such as the choropleth layer, region drill-down heat layer, line layer, and scatter layer, support callback IDs. The configuration of callback IDs allows you to implement map interactions. For more information, see [Configure widget interaction](reseller.en-US/User Guide/Manage widgets/Configure widget interaction.md#) and [Configure callback IDs for ticker boards](../reseller.en-US/Best Practices/Configure callback IDs for ticker boards.md#).
 
