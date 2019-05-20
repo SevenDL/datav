@@ -8,7 +8,7 @@ The basemap layer child widget is added to the basic flat map, and the widget pa
 
 ## Configure the configuration plane {#section_urf_jvl_cgb .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16573/155808639541120_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16573/155833607241120_en-US.png)
 
 -   **Mask Color**: Set the mask color of the basemap layer. For more information, see [Configure item description](intl.en-US/User Guide/Manage widgets/Set widget styles/Configure item description.md#).
 -   **Opacity**: Set the opacity of the basemap layer by dragging the slider or entering a value. The value range of this parameter is 0 to 1.
