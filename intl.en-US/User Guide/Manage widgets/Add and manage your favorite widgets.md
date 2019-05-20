@@ -6,7 +6,7 @@ This topic describes how to add a widget to your favorites, and how to view, ren
 
 ## Procedure {#section_zvg_kvm_q2b .section}
 
-1.  Log on to the [DataV console](https://datav.alibabacloud.com/).
+1.  Log on to the [DataV console](https://partners-intl.console.aliyun.com/#/datav).
 2.  On the **Projects** tab page, click **Create Project**, select a template, and then click **Create**.
 
     **Note:** You can also select an existing project on the **Projects** tab page.
@@ -20,23 +20,23 @@ This topic describes how to add a widget to your favorites, and how to view, ren
 
         **Note:** The data indicated by the widget can be affected by the data source changes. Therefore, we recommend that you use static data when you add a widget to your favorites.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155808030444260_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155834394744260_en-US.png)
 
 4.  View the widgets in your favorites.
 
     In the upper-left corner of the page, click the **Back** icon. Then, choose **Widgets** \> **Favorite Library**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155808030441610_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155834394741610_en-US.png)
 
     **Note:** The page displays the number of widgets that you can add to your favorites.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155808030441609_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155834394741609_en-US.png)
 
 5.  Delete a widget from your favorites.
 
     Click the **Delete** icon on the widget.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155808030441611_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155834394741611_en-US.png)
 
 6.  Rename a widget in your favorites.
 
@@ -52,7 +52,7 @@ This topic describes how to add a widget to your favorites, and how to view, ren
     1.  Create a project and select a blank template.
     2.  In the top navigation pane, move your pointer to the **Favorite** icon, and then select a widget.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155808030441671_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41455/155834394741671_en-US.png)
 
 
 ## Add widgets to your favorites by group {#section_rtc_stw_dhb .section}
