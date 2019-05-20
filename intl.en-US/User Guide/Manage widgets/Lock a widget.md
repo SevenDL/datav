@@ -8,13 +8,13 @@ You can **lock** or **unlock** a widget by the following steps:
 2.  Go to **Projects** \> **Create Project**.
 3.  Select a template, and then click **Create**.
 4.  In the Layers list or on the Canvas, select a widget.
-5.  Right-click and choose **Lock** \(or click the **Lock** ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17378/15583440569225_en-US.png) icon at the bottom of the layers list\) , to set the widget status to locked.
+5.  Right-click and choose **Lock** \(or click the **Lock** ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17378/15583458629225_en-US.png) icon at the bottom of the layers list\) , to set the widget status to locked.
 
     **Note:** When a widget is locked, a lock icon appears on the widget layer in gray.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17378/155834405611183_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17378/155834586211183_en-US.png)
 
-6.  In the left-side **Layers** list, select a locked widget, right-click and choose **Unlock** \(or click the![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17378/15583440569225_en-US.png) icon on the widget layer or at the bottom of the layers list\) , to set the widget status to unlocked
+6.  In the left-side **Layers** list, select a locked widget, right-click and choose **Unlock** \(or click the![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17378/15583458629225_en-US.png) icon on the widget layer or at the bottom of the layers list\) , to set the widget status to unlocked
 
 ## Lock layer function {#section_wwp_vjh_t2b .section}
 
