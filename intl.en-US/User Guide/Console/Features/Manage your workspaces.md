@@ -4,14 +4,12 @@ This topic describes how to use the workspace management function of DataV to ma
 
 ## Use workspaces {#section_kyr_fr4_p2b .section}
 
-1.  Log on to the .
-2.  Log on to the .
-3.  Log on to the [DataV console](https://partners-intl.console.aliyun.com/#/datav).
-4.  From the **Default Workspace** drop-down list in the upper-right corner of the page, select **Workspace Management**.
+1.  Log on to the [DataV console](https://datav.alibabacloud.com/).
+2.  From the **Default Workspace** drop-down list in the upper-right corner of the page, select **Workspace Management**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740657_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546140657_en-US.png)
 
-5.  Create and configure a workspace.
+3.  Create and configure a workspace.
 
     On the Workspaces page, you can manage workspaces. Specifically, you can switch, create, view, rename, or delete a workspace as needed. For detailed information, see [Manage workspaces](#section_g2z_qr4_p2b).
 
@@ -19,7 +17,7 @@ This topic describes how to use the workspace management function of DataV to ma
 
     **Note:** After you refresh the console page for the first time, the default workspace is displayed.
 
-6.  Select a workspace from the **Default Workspace** drop-down list and switch between workspaces.
+4.  Select a workspace from the **Default Workspace** drop-down list and switch between workspaces.
 
     You can also copy projects from one workspace to another. For detailed information, see [Copy a project to the other workspace](#section_bpr_k4q_bhb).
 
@@ -30,7 +28,7 @@ On the Workspaces page, you can:
 
 -   Switch between different workspaces by clicking the workspace name.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740690_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546140690_en-US.png)
 
 -   Create a workspace by following these steps:
 
@@ -53,7 +51,7 @@ On the Workspaces page, you can:
     3.  Finish or cancel creating the workspace.
         -   To finish creating the workspace, click **Create**.
         -   To cancel creating the workspace, click **Cancel**.
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740669_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546140669_en-US.png)
 
 -   View and configure a workspace. Click the name of a workspace and configure the workspace by following these steps:
     -   Configure the basic information about the workspace.
@@ -64,22 +62,22 @@ On the Workspaces page, you can:
 
         The permissions of different members are as follows.
 
-        ![Permissions of workspace members](images/40947_en-US.png)
+        ![Permissions of workspace members](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546140947_en-US.png)
 
         -   Add a RAM administrator. In the **Administrator** field, enter the username or the ID of the target RAM user and click **Add**.
         -   Add a RAM developer. In the **Developer** field, enter the username or the ID of the target RAM user and click **Add**.
         -   Delete a workspace member. In the member list, locate the target workspace member and click the **Delete** icon.
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740670_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546140670_en-US.png)
 
     -   Rename a workspace. Move the pointer over the workspace name and click the **Edit** icon.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740671_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546140671_en-US.png)
 
     -   **Note:** Once a workspace is deleted, it cannot be recovered.
 
         Delete a workspace. Move the pointer over the workspace name and click the **Delete** icon.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740672_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546140672_en-US.png)
 
         **Note:** Only the Alibaba Cloud account administrator has the permission to delete a workspace. Before the administrator deletes a workspace, make sure the workspace does not have any projects, data sources, groups, or favorite widgets.
 
@@ -90,14 +88,14 @@ In the DataV console, you can copy a project from a workspace to another workspa
 
 1.  Move the pointer over the target project and click **Copy to Workspace**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740694_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546240694_en-US.png)
 
 2.  Select the target workspace and click **OK**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740699_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546240699_en-US.png)
 
 3.  Switch to the target workspace and view the project that you have copied.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740700_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843546240700_en-US.png)
 
 
