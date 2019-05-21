@@ -9,7 +9,7 @@ This topic describes how to use the workspace management function of DataV to ma
 3.  Log on to the [DataV console](https://partners-intl.console.aliyun.com/#/datav).
 4.  From the **Default Workspace** drop-down list in the upper-right corner of the page, select **Workspace Management**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540657_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740657_en-US.png)
 
 5.  Create and configure a workspace.
 
@@ -30,7 +30,7 @@ On the Workspaces page, you can:
 
 -   Switch between different workspaces by clicking the workspace name.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540690_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740690_en-US.png)
 
 -   Create a workspace by following these steps:
 
@@ -53,7 +53,7 @@ On the Workspaces page, you can:
     3.  Finish or cancel creating the workspace.
         -   To finish creating the workspace, click **Create**.
         -   To cancel creating the workspace, click **Cancel**.
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540669_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740669_en-US.png)
 
 -   View and configure a workspace. Click the name of a workspace and configure the workspace by following these steps:
     -   Configure the basic information about the workspace.
@@ -69,17 +69,17 @@ On the Workspaces page, you can:
         -   Add a RAM administrator. In the **Administrator** field, enter the username or the ID of the target RAM user and click **Add**.
         -   Add a RAM developer. In the **Developer** field, enter the username or the ID of the target RAM user and click **Add**.
         -   Delete a workspace member. In the member list, locate the target workspace member and click the **Delete** icon.
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540670_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740670_en-US.png)
 
     -   Rename a workspace. Move the pointer over the workspace name and click the **Edit** icon.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540671_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740671_en-US.png)
 
     -   **Note:** Once a workspace is deleted, it cannot be recovered.
 
         Delete a workspace. Move the pointer over the workspace name and click the **Delete** icon.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540672_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740672_en-US.png)
 
         **Note:** Only the Alibaba Cloud account administrator has the permission to delete a workspace. Before the administrator deletes a workspace, make sure the workspace does not have any projects, data sources, groups, or favorite widgets.
 
@@ -90,14 +90,14 @@ In the DataV console, you can copy a project from a workspace to another workspa
 
 1.  Move the pointer over the target project and click **Copy to Workspace**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540694_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740694_en-US.png)
 
 2.  Select the target workspace and click **OK**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540699_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740699_en-US.png)
 
 3.  Switch to the target workspace and view the project that you have copied.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155834346540700_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/136649/155843466740700_en-US.png)
 
 
