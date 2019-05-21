@@ -17,40 +17,40 @@ The following sections describe how to:
 
 1.  Visit the Logstore List page within your project.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098548038_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858038_en-US.png)
 
 2.  Click **Search** next to the name of your project. The following page is displayed:
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098548039_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858039_en-US.png)
 
 3.  Create indices for all required fields. The following example creates an index for each item. Click**Index Attributes** from the upper menu of the page and click **Modify**.
 4.  Verify the data from the Search & Analysis page:
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098548041_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858041_en-US.png)
 
 5.  Once the data has been imported properly, switch to **Graph** view \(in the following graph, the axis is ‘time’\):
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098548042_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858042_en-US.png)
 
 
 ## Configure DataV {#section_vq4_pgm_q2b .section}
 
-1.  1. Visit the DataV product page to create your first project.
+1.  Visit the DataV product page to create your first project.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098548043_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858043_en-US.png)
 
 2.  Click **Create Project**, select a blank template, and click **Create**.
 3.  Add a widget to the dashboard.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558045_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858045_en-US.png)
 
     The widget displays some sample static dataset.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558046_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858046_en-US.png)
 
 4.  Click the widget and, select the Log Service \(SLS\) from Data Source Type from the **Data** tab on the right side.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558047_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858047_en-US.png)
 
 5.  Click **Create** in the Select Data Source. The New data dialog is displayed, fill in the relevant information, and click **OK**.
 
@@ -75,7 +75,7 @@ The following sections describe how to:
 
 7.  Preview the data by clicking **View Data Response** button at the lower-side of the window. The following response result window is displayed:
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558049_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180858049_en-US.png)
 
 8.  Click **Select Filter** and apply the following filter to make sure the `pv` is an integer, and click **OK**.
 
@@ -88,25 +88,25 @@ The following sections describe how to:
     )
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558050_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180868050_en-US.png)
 
 9.  Set the axes and verify the settings are set correctly.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558052_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180868052_en-US.png)
 
 10. Click **Preview**.
 
     You can see that `x` and `y` use the correct data type, and `pv` is an integer.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558054_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180868054_en-US.png)
 
 11. To share this dashboard publicly, click **Publish** in the upper-right corner of the page.
 
     An example of a completed and published DataV dashboard, using a dataset from a Log Service data, is as follows:
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558056_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180868056_en-US.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584098558057_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15584180868057_en-US.png)
 
 
 ## Conclusion {#section_q3s_nhm_q2b .section}
