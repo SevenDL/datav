@@ -1,6 +1,6 @@
 # Add a Table Store data source {#concept_e42_c5h_wfb .concept}
 
-[Table Store](../../../../reseller.en-US/Product Introduction/What is Table Store?.md#) is a NoSQL database service built on Alibaba Cloud's Apsra distributed operating system.
+[Table Store](../../../../intl.en-US/Product Introduction/What is Table Store?.md#) is a NoSQL database service built on Alibaba Cloud's Apsra distributed operating system.
 
 ## Procedure {#section_lnc_fgq_p2b .section}
 
@@ -8,12 +8,12 @@
 2.  From the **Type** drop-down menu, select **TableStore**.
 3.  Enter the Table Store data source information, as shown in the following figure.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155834843032624_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155849323532624_en-US.png)
 
     -   **Name**: The display name of the data source. You can customize the display name as needed.
     -   **AK ID**: The AccessKey ID of the account that can access Table Store.
     -   **AK Secret**: The AccessKey Secret of the account that can access Table Store.
-    -   **Internet**: The [endpoint](../../../../reseller.en-US/Product Introduction/Terms/Endpoint.md#) of Table Store. You can enter an endpoint according to the Table Store instance to be accessed.
+    -   **Internet**: The [endpoint](../../../../intl.en-US/Product Introduction/Terms/Endpoint.md#) of Table Store. You can enter an endpoint according to the Table Store instance to be accessed.
     The system automatically tests connectivity after the data source information is set.
 
 4.  After the connectivity test is successful, click **OK**.
@@ -27,8 +27,8 @@
 2.  On the displayed page, select a widget. In the data pane, select **TableStore** for **Data Source Type**.
 3.  From the **Select Data Source** drop-down menu, select the Table Store data source you have configured before.
 4.  From the **Select Action** drop-down menu, select either of the following actions:
-    -   getRow: Corresponds to the GetRow API of Table Store. For more information, see [GetRow API](../../../../reseller.en-US/.md#).
-    -   getRange: Corresponds to the GetRange API of Table Store. For more information, see [GetRange API](../../../../reseller.en-US/API Reference/Operations/GetRange.md#).
+    -   getRow: Corresponds to the GetRow API of Table Store. For more information, see [GetRow API](../../../../intl.en-US/.md#).
+    -   getRange: Corresponds to the GetRange API of Table Store. For more information, see [GetRange API](../../../../intl.en-US/API Reference/Operations/GetRange.md#).
 5.  In the **Select Action** area, enter a SQL statement. The SQL statement must meet the following requirements:
     -   Parameters in the SQL statement must be in the JSON format.
     -   If you select getRow, the system reads data from a row according to the specified primary key.
@@ -91,31 +91,31 @@
 
 1.  Prepare data for the Table Store data source.
 
-     Log on to the [Table Store console](https://ots.console.aliyun.com/), [create an instance](../../../../reseller.en-US/Quick Start/Create an instance.md#), and [read or write data](../../../../reseller.en-US/Quick Start/Read or Write data.md#). In the following example, an instance named test1948 is created. This instance has three rows of data and each row has two columns named id \(primary key in integer format\) and test \(in string format\).
+     Log on to the [Table Store console](https://ots.console.aliyun.com/), [create an instance](../../../../intl.en-US/Quick Start/Create an instance.md#), and [read or write data](../../../../intl.en-US/Quick Start/Read or Write data.md#). In the following example, an instance named test1948 is created. This instance has three rows of data and each row has two columns named id \(primary key in integer format\) and test \(in string format\).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155834843032810_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155849323532810_en-US.png)
 
 2.  Configure the data source, as shown in the following figure.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155834843032811_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155849323532811_en-US.png)
 
 3.  Query parameters.
 
     -   getRow:
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155834843032812_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155849323532812_en-US.png)
 
         The data response is as follows.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155834843032813_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155849323532813_en-US.png)
 
     -   getRange:
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155834843032814_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155849323532814_en-US.png)
 
         The data response is as follows.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155834843032815_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64591/155849323532815_en-US.png)
 
     **Note:** When you query the getRange parameter, if you set start to id:InfMin and end to id:3, the values 1 and 2 are displayed for id. The reason for this is that the getRange parameter does not contain the end row, whose id is 3, because it is not within the range specified.
 
