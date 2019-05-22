@@ -3,14 +3,14 @@
 -   下载Eclipse软件，并配置好Java环境。
 -   此Demo为maven工程，请先安装maven。
 
-1.  参考[阿里云物联网平台文档](https://help.aliyun.com/document_detail/42693.html)，选择**设备端开发指南** \> **JAVA-SDK**，下载[iotx-sdk-mqtt-java](http://aliyun-iot.oss-cn-hangzhou.aliyuncs.com/iotx-sdk-java/iotx-sdk-mqtt-java-20170526.zip?spm=a2c4g.11186623.2.11.641652276CMj67&file=iotx-sdk-mqtt-java-20170526.zip)并解压。 
-2.  打开Eclipse应用，选择**file** \> **import** \> **Existing Maven Projects**，导入上一步中的解压后的Java SDK文件。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155410416712652_zh-CN.png)
+1.  参考[下载设备端SDK](../../../../cn.zh-CN/设备端开发指南/下载设备端SDK.md#)，下载[iotx-sdk-mqtt-java](http://aliyun-iot.oss-cn-hangzhou.aliyuncs.com/iotx-sdk-java/iotx-sdk-mqtt-java-20170526.zip?spm=a2c4g.11186623.2.11.641652276CMj67&file=iotx-sdk-mqtt-java-20170526.zip)并解压。
+2.  打开Eclipse应用，选择**file** \> **import** \> **Existing Maven Projects**，导入上一步中的解压后的Java SDK文件。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155848852512652_zh-CN.png)
 
- 
-3.  双击打开SimpleClient4IOT.java文件。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155410416712656_zh-CN.png)
 
- 
-4.   配置设备三元组和topic。修改deviceName、productKey、secret、subTopic、pubTopic变量，如下图所示。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155410416712658_zh-CN.png)
+3.  双击打开SimpleClient4IOT.java文件。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155848852512656_zh-CN.png)
+
+
+4.  配置设备三元组和topic。修改deviceName、productKey、secret、subTopic、pubTopic变量，如下图所示。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155848852512658_zh-CN.png)
 
  
 
@@ -21,7 +21,7 @@
     private static String pubTopic = "/" + productKey + "/" + deviceName + "/user/update";
     ```
 
-5.   修改content，如下图所示。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155410416712662_zh-CN.png)
+5.  修改content，如下图所示。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155848852512662_zh-CN.png)
 
  
 
@@ -47,6 +47,6 @@
 
 6.  单击**运行**。 运行成功后，返回如下信息。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155410416712664_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21750/155848852512664_zh-CN.png)
 
 
