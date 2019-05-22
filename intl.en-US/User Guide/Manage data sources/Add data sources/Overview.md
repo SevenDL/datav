@@ -40,7 +40,7 @@ DataV supports the following types of APIs as data sources:
 
 You can directly copy and paste an API address into the **Data configuration** panel. If your API has an authentication process, you must encapsulate the API in [Alibaba Cloud API Gateway](https://partners-intl.console.aliyun.com/#/apigateway), and access it through configurations of Alibaba Cloud API gateway.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16532/15584937297800_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16532/15584938247800_en-US.png)
 
 ## Others {#section_myj_l2q_p2b .section}
 
