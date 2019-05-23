@@ -19,15 +19,15 @@
 
         Setting larger values for the pixel size allows interpolation to work faster, but also reduces the precision of interpolation results.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909288_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585762109288_en-US.png)
 
     3.  Set the **Render Type**. The recommended type is **Linear**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909289_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585762109289_en-US.png)
 
     4.  Set the **Classify Color Count**. The recommended value is **35**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909290_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585762109290_en-US.png)
 
 
 ## Add data for the timeline {#section_fzx_xbr_p2b .section}
@@ -111,11 +111,11 @@
     1.  Click the **Configuration** pane.
     2.  Click **Node** and set **Data Format** to **%Y%m%d%H**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909291_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585762109291_en-US.png)
 
     3.  Click **Interaction** and set the value of the callback ID to date.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909292_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585762109292_en-US.png)
 
 
 ## Set the map title {#section_y15_ccr_p2b .section}
@@ -124,7 +124,7 @@
 2.  Click the **Data** pane.
 3.  Set **Data Source Type** to **Database**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909293_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585762119293_en-US.png)
 
 4.  In the **Select Data Source** list, select a database.
 
