@@ -10,7 +10,7 @@
 
 4.  Click **Interpolation Points Data**.
 5.  Configure the data.
-    -   **Data Source Type**: The APIs have been specified in [Process the APIs](reseller.en-US/.md#) and the data has been tested. Therefore, set the data source type to API.
+    -   **Data Source Type**: The APIs have been specified in [Process the APIs](reseller.en-US/Best Practices/Use DataV to view air quality changes before and after the Spring Festival/Preparations/Process the APIs.md#) and the data has been tested. Therefore, set the data source type to API.
     -   **URL**: Enter the API test URL \(http://127.0.0.1:8888/aqi?date=2017012722\).
 6.  Click **View Data Response**. The data response is displayed and the data has been successfully matched.
 7.  Set the style of the isosurface layer widget.
@@ -19,15 +19,15 @@
 
         Setting larger values for the pixel size allows interpolation to work faster, but also reduces the precision of interpolation results.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15584087839288_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909288_en-US.png)
 
     3.  Set the **Render Type**. The recommended type is **Linear**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15584087839289_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909289_en-US.png)
 
     4.  Set the **Classify Color Count**. The recommended value is **35**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15584087839290_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909290_en-US.png)
 
 
 ## Add data for the timeline {#section_fzx_xbr_p2b .section}
@@ -111,11 +111,11 @@
     1.  Click the **Configuration** pane.
     2.  Click **Node** and set **Data Format** to **%Y%m%d%H**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15584087839291_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909291_en-US.png)
 
     3.  Click **Interaction** and set the value of the callback ID to date.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15584087839292_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909292_en-US.png)
 
 
 ## Set the map title {#section_y15_ccr_p2b .section}
@@ -124,7 +124,7 @@
 2.  Click the **Data** pane.
 3.  Set **Data Source Type** to **Database**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15584087839293_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17486/15585756909293_en-US.png)
 
 4.  In the **Select Data Source** list, select a database.
 
