@@ -4,11 +4,11 @@
 
 ## 操作步骤 {#section_lnc_fgq_p2b .section}
 
-1.  单击**我的数据** \> **添加数据**。
+1.  登录[DataV控制台](http://datav.aliyun.com/)，选择**我的数据** \> **添加数据**。
 2.  单击**类型**下拉菜单，选择数据库类型为**阿里云API网关**。
 3.  填写API网关信息，如下图所示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155599912832305_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155901477432305_zh-CN.png)
 
     -   **名称**：数据源的显示名称，您可以自由命名。
     -   **域名**：API网关的调用域名，您可以进入[API网关控制台](https://apigateway.console.aliyun.com/)查看。
@@ -41,33 +41,33 @@
 
     1.  购买云市场API服务。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155599912832312_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155901477432312_zh-CN.png)
 
         购买完成后进入**API网关控制台**页面，可以看到该接口的**AppKey**、**AppSecret**信息，将这些信息填写到DataV的数据源处。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155599912832313_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155901477432313_zh-CN.png)
 
     2.  获取API服务的域名、路径、参数，在API说明页面查询API定义，以其中的**IP定位**接口为例，可以查看到这个接口的相关信息，如下图所示。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155599912832314_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155901477432314_zh-CN.png)
 
         -   **域名**：iploc.market.alicloudapi.com
         -   **请求 URL**：/v3/ip
         -   **请求参数**：ip
     3.  配置数据源 。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155599912832315_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155901477432315_zh-CN.png)
 
     4.  填写查询参数。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155599912832316_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155901477432316_zh-CN.png)
 
     5.  查看查询结果。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155599912832317_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155901477432317_zh-CN.png)
 
     6.  使用回调参数。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155599912832318_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64229/155901477432318_zh-CN.png)
 
 
