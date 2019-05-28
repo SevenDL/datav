@@ -4,11 +4,11 @@
 
 ## 操作步骤 {#section_lnc_fgq_p2b .section}
 
-1.  单击**我的数据** \> **添加数据**。
+1.  登录[DataV控制台](http://datav.aliyun.com/)，选择**我的数据** \> **添加数据**。
 2.  单击**类型**下拉菜单，选择数据库类型为**业务实时监控服务ARMS**。
 3.  填写ARMS相关信息，如下图所示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334197_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489334197_zh-CN.png)
 
     -   **名称**：数据源的显示名称，您可以自由命名。
     -   **AK ID**：拥有ARMS访问权限的账号的AccessKey ID（从ARMS控制台获取）。
@@ -35,88 +35,88 @@
     -   同步完成后会列出用户账号下的ECS服务器。
     -   对于需要监控的机器，如果**Agent状态**为**未安装**，单击**安装Agent**，根据教程进行安装，安装完成后单击**检查Agent**同步Agent状态。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334199_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489334199_zh-CN.png)
 
     -   **Agent状态**为**已安装**的机器可以作为数据源。
 3.  单击左侧菜单栏的**自定义监控** \> **监控任务管理**，按照以下步骤新建并配置监控任务。
     1.  选择**新建监控任务** \> **新建自定义任务**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334200_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489334200_zh-CN.png)
 
     2.  在新建自定义任务对话框中，填写任务信息，完成后单击**新建并进行配置**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334201_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489334201_zh-CN.png)
 
     3.  配置任务。
         1.  配置数据源。
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334202_zh-CN.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489334202_zh-CN.png)
 
             1.  选择**日志源类型**为**云服务器ECS**。
             2.  单击**添加日志源**，添加**数据源**和**日志路径**。
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334203_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489334203_zh-CN.png)
 
                 **说明：** 日志路径由logtail的配置决定，此处默认为error日志路径。
 
             3.  单击**日志抓取预览**，预览日志。
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334204_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489334204_zh-CN.png)
 
         2.  日志清洗。
             1.  根据业务需求选择切分方案，本案例选择**智能切分**。
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334205_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434205_zh-CN.png)
 
             2.  单击**获取方案**，系统自动开始切分，切分完成后可查看切分结果。本案例的切分结果如下：
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902334206_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434206_zh-CN.png)
 
             3.  单击**保存**，保存日志。保存完成后，单击**下一步**，如果出现如下提示框，直接单击**确定**即可。
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902434209_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434209_zh-CN.png)
 
         3.  配置数据集与报警。
             1.  单击**添加数据集**，新建数据集。
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902434212_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434212_zh-CN.png)
 
             2.  填写数据集信息，单击**保存**。
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902434213_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434213_zh-CN.png)
 
             3.  单击**完成配置**，系统会弹出**启动监控任务**对话框，选择**从最新位置消费**，单击**确定**，即可启动监控任务。
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902434214_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434214_zh-CN.png)
 
                 任务启动成功后，可查看任务**监控状态**，如下图所示：
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902434210_zh-CN.png)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434210_zh-CN.png)
 
 4.  单击左侧菜单栏的**数据集管理** \> **查询数据**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902434215_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434215_zh-CN.png)
 
 5.  将查询到的数据接入DataV中。
 
     单击**接入DataV** \> **生成DataV接入链接**，获取AK和接入链接。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902434243_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434243_zh-CN.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902434244_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434244_zh-CN.png)
 
 6.  进入DataV控制台，编辑 ARMS 数据源。
 
     填写从ARMS获取的AK ID和AK Secret。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902534245_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434245_zh-CN.png)
 
 7.  在**请求URL**编辑框中输入从ARMS获取到的DataV接入链接。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902534246_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489434246_zh-CN.png)
 
 8.  单击**查看数据响应结果**，查看ARMS监控数据。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155599902534247_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/77557/155901489534247_zh-CN.png)
 
 
