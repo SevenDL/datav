@@ -2,11 +2,11 @@
 
 ## 操作步骤 {#section_lnc_fgq_p2b .section}
 
-1.  进入[DataV控制台](https://datav.alibabacloud.com/)，选择**我的数据** \> **添加数据**。
+1.  登录[DataV控制台](https://datav.alibabacloud.com/)，选择**我的数据** \> **添加数据**。
 2.  单击**类型**下拉菜单，选择数据库类型为**兼容 MySQL 数据库**。
 3.  填写数据库信息。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16537/15585088577910_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16537/15590146167910_zh-CN.png)
 
     -   名称：数据源的显示名称，可以自由命名。
     -   域名：连接数据库的 URL 地址（不是官网页面的 URL，也不是本机的 IP，是需要 DataV 服务器能够通过公网或阿里云部分 Region 内网访问您数据库的 URL 地址）。
@@ -18,7 +18,7 @@
 
     以[Data Lake Analytics](https://www.alibabacloud.com/help/zh/doc-detail/70378.htm)服务为例，配置信息示例如下图所示：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16537/155850885747761_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16537/155901461747761_zh-CN.png)
 
 4.  测试成功后，单击**确认**，完成数据源添加。
 
