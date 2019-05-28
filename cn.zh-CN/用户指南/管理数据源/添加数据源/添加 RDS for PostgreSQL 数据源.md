@@ -3,14 +3,14 @@
 ## RDS for PostgreSQL （内网） {#section_ol5_yvq_p2b .section}
 
 -   **操作步骤** 
-    1.  进入[DataV控制台](https://datav.aliyun.com/)，选择**我的数据** \> **添加数据**。
+    1.  登录[DataV控制台](https://datav.alibabacloud.com/)，选择**我的数据** \> **添加数据**。
     2.  单击**类型**下拉箭头，选择数据库类型为 **RDS for PostgreSQL**。
     3.  单击下拉箭头，选择**内网**。
     4.  填写数据库信息。
 
-        如果您需要新建数据库，请参阅[创建数据库](https://help.aliyun.com/document_detail/26190.html?)。
+        如果您需要新建数据库，请参阅[创建数据库](https://www.alibabacloud.com/help/doc-detail/26190.htm?)。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16535/15585093197869_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16535/15590145627869_zh-CN.png)
 
         -   **名称**：数据源的显示名称，可以自由命名。
         -   **域名**：连接数据库的 URL 地址（不是官网页面的 URL，也不是本机的 IP，是需要 DataV 服务器能够通过公网或阿里云部分 Region 内网访问您数据库的 URL 地址）。
@@ -31,14 +31,14 @@
 ## RDS for PostgreSQL （外网） {#section_zlb_4wq_p2b .section}
 
 -   **操作步骤** 
-    1.  进入[DataV控制台](https://datav.aliyun.com/)，选择**我的数据** \> **添加数据**。
+    1.  登录[DataV控制台](https://datav.alibabacloud.com/)，选择**我的数据** \> **添加数据**。
     2.  单击**类型**下拉箭头，选择数据库类型为 **RDS for PostgreSQL**。
     3.  单击下拉箭头，选择**外网**。
     4.  填写数据库信息。
 
-        如果您需要新建数据库，请参阅[创建数据库](https://help.aliyun.com/document_detail/26190.html)。
+        如果您需要新建数据库，请参阅[创建数据库](https://www.alibabacloud.com/help/doc-detail/26190.htm)。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16535/15585093197871_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16535/15590145627871_zh-CN.png)
 
         -   **名称**：数据源的显示名称，可以自由命名。
         -   **域名**：连接数据库的 URL 地址（不是官网页面的 URL，也不是本机的 IP，是需要 DataV 服务器能够通过公网或阿里云部分 Region 内网访问您数据库的 URL 地址）。
