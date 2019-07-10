@@ -19,11 +19,11 @@
 
 1.  登录日志服务控制台，查看Logstore列表。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404098038_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404708038_zh-CN.png)
 
 2.  单击列表中的**查询**，出现如下界面。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404098039_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404708039_zh-CN.png)
 
 3.  为所有必填字段创建索引。
 
@@ -31,35 +31,35 @@
 
 4.  在**查询分析**页面验证数据。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404098041_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404708041_zh-CN.png)
 
 5.  数据导入成功后，单击左侧菜单栏的**仪表板**，切换至图形页面（下图中的X轴为时间）。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404098042_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404718042_zh-CN.png)
 
 
 ## 配置DataV {#section_vq4_pgm_q2b .section}
 
 1.  登录DataV控制台。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404108043_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404718043_zh-CN.png)
 
 2.  单击**创建项目**，选择一个空白模板并输入项目名称，单击**创建**。
 3.  在画布中添加一个组件。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404108045_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404718045_zh-CN.png)
 
     该组件默认显示静态数据集。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404108046_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404728046_zh-CN.png)
 
 4.  单击该组件，在右侧的**数据**配置页签，将**数据源类型**设置为**简单日志服务 SLS**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404108047_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404728047_zh-CN.png)
 
 5.  单击**新建**。在**添加数据**对话框中，填入数据源相关信息，单击**确定**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/156274041051174_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/156274047251174_zh-CN.png)
 
     -   **数据源名称**：数据源的显示名称，您可以自由命名。
     -   **AppKey**：拥有目标SLS访问权限的账号的AccessKey ID。
@@ -87,7 +87,7 @@
 
 7.  单击**查看数据响应结果**预览数据，结果如下图所示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404118049_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404728049_en-US.png)
 
 8.  勾选**使用过滤器**，添加如下的过滤器，确保`pv`为整数，单击**确定**。
 
@@ -100,17 +100,17 @@
     )
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404118050_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404728050_en-US.png)
 
 9.  设置坐标轴并验证是否正确。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404118052_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404738052_en-US.png)
 
 10. 单击**预览**。
 
     您可以看到x和y使用正确的数据类型，并且pv为整数。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404128054_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404738054_en-US.png)
 
 11. 单击界面右上角的**发布**，发布该大屏项目，使得您可以公开访问该大屏。
 
@@ -118,7 +118,7 @@
 
 本案例的发布结果如下图所示。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404128057_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16936/15627404738057_en-US.png)
 
 您已在阿里云上成功配置DataV和Log Service，并使用Log Service通过自定义DataV可视化大屏实现了实时监控。
 
