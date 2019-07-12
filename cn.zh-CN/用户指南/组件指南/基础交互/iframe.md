@@ -15,16 +15,53 @@ iframe是基础交互组件的一种，支持自定义iframe链接，支持自�
 
 -   **可关闭**：勾选后，在预览或发布页面，组件右上角会出现一个关闭按钮，单击此按钮可关闭该网页。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/155894122312781_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156292598412781_zh-CN.png)
 
 
 ## 数据 {#section_w1h_wqr_gfb .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/155894122313019_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156292598513019_zh-CN.png)
 
 -   url：配置组件所显示页面的链接，与**链接**配置项功能相同。如果同时配置，优先使用数据中的url。
 
 ## 交互 {#section_d3q_2sr_gfb .section}
 
-勾选**启用**，开启组件交互功能。当iframe的链接发生变化时，会抛出您自定义的变量值。具体配置请参考[组件回调ID配置](../intl.zh-CN/最佳实践/配置数字翻牌器组件的回调ID.md#)。
+勾选**启用**，开启组件交互功能。当iframe的链接发生变化时，会抛出您自定义的变量值。具体配置请参考[组件回调ID配置](../cn.zh-CN/用户指南/进阶技巧/配置数字翻牌器组件的回调ID.md#)。
+
+## 节点编程交互配置 {#section_9t2_qbh_7yn .section}
+
+在大屏编辑页面中，单击顶部菜单栏的**配置节点编程**图标，进入iframe的节点编程配置页面。可以看到如下图所示的iframe的节点编程配置参数。
+
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156292598550939_zh-CN.jpg)
+
+-   **事件** 
+    -   **当url链接接口请求完成时** 
+
+        数据接口请求返回并经过过滤器处理后抛出的事件，同时抛出处理后的JSON格式的数据。具体数据可参见上文的[数据示例](#)。
+
+    -   **链接改变事件** 
+
+        当url链接发生变化时抛出的事件，同时抛出该url对应的数据项。具体数据可参见上文的[数据示例](#)。
+
+-   **动作** 
+    -   **请求url链接接口** 
+
+        重新请求服务端数据，上游转换器或图层节点抛出的数据将作为参数。例如iframe配置了API数据源为`http://api.test`，传到**请求url链接接口**动作的数据为`{ id: '1'}`，则最终请求接口为`http://api.test?id=1`。
+
+    -   **导入url链接接口** 
+
+        按组件绘制格式处理数据后，导入组件，重新绘制。不需要重新请求服务端数据。具体数据可参见上文的[数据示例](#)。
+
+    -   **更新组件配置** 
+
+        动态更新组件的样式配置。需要首先在组件的**配置**面板中，单击**复制配置到剪贴板**，获取组件配置数据。再根据需要在节点编程配置页面的转换器中更改对应样式的字段值。
+
+    -   **显示** 
+
+        显示组件，不需要参数。
+
+    -   **隐藏** 
+
+        隐藏组件，不需要参数。
+
 
