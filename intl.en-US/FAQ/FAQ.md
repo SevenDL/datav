@@ -15,7 +15,7 @@
 
 1.  What can I do if I fail to connect to my database?
 
-    You can add the IP address of your DataV server to your database whitelist or your ECS security group according to the network type and region of your database. You can also use the DataV proxy service to connect to your database. For more information, see [DataV proxy configuration in Linux](../../../../reseller.en-US/User Guide/Advanced skills/DataV proxy configuration in Linux.md#).
+    You can add the IP address of your DataV server to your database whitelist or your ECS security group according to the network type and region of your database. You can also use the DataV Proxy service to connect to your database. For more information, see [DataV Proxy configuration in Linux](../../../../intl.en-US/Advanced Skills/DataV Proxy configuration in Linux.md#).
 
 2.  How can I configure a CSV data source?
 
@@ -27,7 +27,7 @@
 
 4.  Can I connect databases deployed on my ECS instance or other devices to DataV?
 
-    Yes, you can. However, you must activate the Internet IP of your database first. You can also use the DataV proxy service to connect to your database. For more information, see [DataV proxy configuration in Linux](../../../../reseller.en-US/User Guide/Advanced skills/DataV proxy configuration in Linux.md#).
+    Yes, you can. However, you must activate the Internet IP of your database first. You can also use the DataV Proxy service to connect to your database. For more information, see [DataV Proxy configuration in Linux](../../../../intl.en-US/Advanced Skills/DataV Proxy configuration in Linux.md#).
 
 
 ## Operation FAQ {#section_kcd_1sk_q2b .section}
@@ -56,7 +56,7 @@
 
 5.  How can I configure the widget interaction function?
 
-    The widget interaction function is being tested currently. For more information, see [Widget interaction](../../../../reseller.en-US/User Guide/Advanced skills/Widget interaction.md#).
+    The widget interaction function is being tested currently. For more information, see [Widget interaction](../../../../intl.en-US/Advanced Skills/Widget interaction.md#).
 
 6.  How can I manage displayed data by passing parameters through a URL?
 
@@ -71,8 +71,8 @@
 
     Yes, you can. To do so, follow these steps:
 
-    1.  Create a RAM user. For more information, see [Prepare an Alibaba Cloud account](https://www.alibabacloud.com/help/doc-detail/47703.html).
-    2.  Log on to the [Authorization Center](https://data.aliyun.com/console/member) and click **Refresh** 
+    1.  Create a RAM user. For more information, see [Create a RAM user](../../../../intl.en-US/Preparation/Administrator Operations/Create a RAM user.md#).
+    2.  Log on to the [Authorization Center](https://data.aliyun.com/console/member) and click **Refresh**.
 
         After you refresh the page, all the RAM users are displayed. The target RAM user can log on to the DataV console without obtaining other permissions.
 
