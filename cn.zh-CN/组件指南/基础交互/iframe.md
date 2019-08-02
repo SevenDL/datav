@@ -2,22 +2,38 @@
 
 iframe是基础交互组件的一种，支持自定义iframe链接，支持自定义iframe的显隐，适用于将网页嵌入大屏中进行显示。本文档为您介绍iframe各配置项的含义，帮助您快速准确地使用iframe组件。
 
-## 样式 {#section_p4j_trq_gfb .section}
+## 配置 {#section_p4j_trq_gfb .section}
 
+-   **搜索配置**：单击配置面板右上角的**搜索配置**，可在搜索配置弹出框中输入您需要搜索的配置项名称，快速定位到该配置项，系统支持模糊匹配。详情请参见[搜索组件配置](../cn.zh-CN/管理组件/搜索组件配置.md#)。
+-   **图表尺寸**：包括组件的宽度和高度，单位为px。可单击![锁定长宽比按键](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21818/156473714553660_zh-CN.png)锁定组件的宽高比，等比例修改组件的宽高。再次单击进行解锁，解锁后宽高比不受限制。
+-   **图表位置**：包括组件的**横坐标**和**纵坐标**，单位为px。**横坐标**为组件左上角距离页面左边界的像素距离，**纵坐标**为组件左上角距离页面上边界的像素距离。
+-   **旋转角度**：以组件的中心为中心点，进行旋转，单位为度（°）。
+    -   手动输入角度值，控制组件的旋转角度。
+    -   拖动![圆圈旋转控制图标](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21818/156473714553668_zh-CN.png)图标内的黑点，控制组件的旋转角度。
+    -   单击![左右翻转图标](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21818/156473714553669_zh-CN.png)图标，控制组件左右翻转样式。
+    -   单击![上下翻转图标](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21818/156473714553670_zh-CN.png)图标，控制组件上下翻转样式。
+-   **透明度**：取值范围为\[0,1\]。为**0**时，图表隐藏；为**1**时，图表全部显示。默认为**1**。
 -   **链接**：配置组件所显示页面的链接。
 
-    **说明：** 建议声明http或者https协议，要注意https访问大屏时，iframe的链接若是http则无法访问。该链接的页面需要支持跨域。
+    **说明：** 建议声明http或者https协议，要注意https访问大屏时，iframe的链接若是http则无法访问。该链接的页面需要支持[跨域](../cn.zh-CN/进阶技巧/跨域数据配置.md#)。
 
 -   **可关闭**：勾选后，在预览或发布页面，组件右上角会出现一个关闭按钮，单击此按钮可关闭该网页。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156447047312781_zh-CN.png)
+    ![iframe可关闭状态预览](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156473714612781_zh-CN.png)
 
 
 ## 数据 {#section_w1h_wqr_gfb .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156447047313019_zh-CN.png)
+![iframe数据面板](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156473714613019_zh-CN.png)
 
--   url：配置组件所显示页面的链接，与**链接**配置项功能相同。如果同时配置，优先使用数据中的url。
+url：配置组件所显示页面的链接，与**链接**配置项功能相同。如果同时配置，优先使用数据中的url。
+
+|配置项|说明|
+|---|--|
+|**自动更新请求**|勾选后可以设置动态轮询，还可以手动输入轮询的时间频次。|
+|**数据源**|单击**配置数据源**，可在设置数据源页面中修改数据源类型和数据查询代码、预览数据源返回结果以及查看数据响应结果。详情请参见[配置组件数据](../cn.zh-CN/管理组件/配置组件数据.md#)。|
+|**数据过滤器**|单击**添加过滤器**，可在设置数据源页面中配置数据过滤器，详情请参见[组件过滤器使用说明](../cn.zh-CN/管理组件/组件数据过滤器使用说明/使用方法.md#)。|
+|**数据响应结果**|展示数据请求的响应结果。当数据源发生改变时，可单击右侧的**刷新**图标，实时查看数据响应结果。|
 
 ## 交互 {#section_d3q_2sr_gfb .section}
 
@@ -27,7 +43,7 @@ iframe是基础交互组件的一种，支持自定义iframe链接，支持自�
 
 在大屏编辑页面中，单击顶部菜单栏的**配置节点编程**图标，进入iframe的节点编程配置页面。可以看到如下图所示的iframe的节点编程配置参数。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156447047350939_zh-CN.jpg)
+![iframe节点编程参数配置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21822/156473714650939_zh-CN.jpg)
 
 -   **事件** 
     -   **当url链接接口请求完成时** 
@@ -36,7 +52,7 @@ iframe是基础交互组件的一种，支持自定义iframe链接，支持自�
 
     -   **链接改变事件** 
 
-        当url链接发生变化时抛出的事件，同时抛出该url对应的数据项。具体数据可参见上文的[数据示例](#)。
+        当url链接发生变化时抛出的事件。
 
 -   **动作** 
     -   **请求url链接接口** 
