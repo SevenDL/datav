@@ -2,8 +2,17 @@
 
 Tab列表是基础交互组件的一种，支持自定义Tab的颜色、数量、类型以及标签样式等，可以通过交互配置，与其他组件配合使用，在大屏中展示所选择Tab的标签内容。本文档为您介绍Tab列表各配置项的含义，帮助您快速准确地使用Tab列表组件。
 
-## 样式 {#section_p4j_trq_gfb .section}
+## 配置 {#section_p4j_trq_gfb .section}
 
+-   **搜索配置**：单击配置面板右上角的**搜索配置**，可在搜索配置弹出框中输入您需要搜索的配置项名称，快速定位到该配置项，系统支持模糊匹配。详情请参见[搜索组件配置](../cn.zh-CN/管理组件/搜索组件配置.md#)。
+-   **图表尺寸**：包括组件的宽度和高度，单位为px。可单击![锁定长宽比按键](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21818/156473720353660_zh-CN.png)锁定组件的宽高比，等比例修改组件的宽高。再次单击进行解锁，解锁后宽高比不受限制。
+-   **图表位置**：包括组件的**横坐标**和**纵坐标**，单位为px。**横坐标**为组件左上角距离页面左边界的像素距离，**纵坐标**为组件左上角距离页面上边界的像素距离。
+-   **旋转角度**：以组件的中心为中心点，进行旋转，单位为度（°）。
+    -   手动输入角度值，控制组件的旋转角度。
+    -   拖动![圆圈旋转控制图标](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21818/156473720453668_zh-CN.png)图标内的黑点，控制组件的旋转角度。
+    -   单击![左右翻转图标](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21818/156473720453669_zh-CN.png)图标，控制组件左右翻转样式。
+    -   单击![上下翻转图标](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21818/156473720453670_zh-CN.png)图标，控制组件上下翻转样式。
+-   **透明度**：取值范围为\[0,1\]。为**0**时，图表隐藏；为**1**时，图表全部显示。默认为**1**。
 -   **字体**：组件的字体。
 -   **背景色**：组件的背景颜色。
 -   **行数**：Tab列表的行数。
@@ -11,23 +20,23 @@ Tab列表是基础交互组件的一种，支持自定义Tab的颜色、数量�
 -   **选择类型**：Tab列表的选择类型，可选：**单选**和**多选**。
 -   **初始化值**：请填入期望初始化选中的标签id值，需要与数据中id字段的值匹配。当组件的**选择类型**为**单选**时，该选项只能包括一个值。当组件的**选择类型**为**多选**时，该选项可以包含多个值，多个值之间用英文逗号隔开。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156447050012905_zh-CN.png)
+    ![选择类型为单选](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156473720412905_zh-CN.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156447050112906_zh-CN.png)
+    ![选择类型为多选](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156473720412906_zh-CN.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156447050112909_zh-CN.png)
+    ![Tab列表的初始化值](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156473720412909_zh-CN.png)
 
--   **全部按钮**：勾选后，Tab列表中会出现**全部**的Tab选项卡。只有当组件的**选择类型**为**多选**时，此选项才会显示。
+-   **全部按钮**：打开后，Tab列表中会出现**ALL**的Tab选项卡。只有当组件的**选择类型**为**多选**时，此选项才会显示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156447050112911_zh-CN.png)
+    ![Tab列表全部按钮](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156473720512911_zh-CN.png)
 
--   **初始化全选**：勾选后，组件初始化时会选中所有的Tab选项卡，且**初始化值**配置项隐藏。只有当组件的**选择类型**为**多选**时，此选项才会显示。
+-   **初始化全选**：打开后，组件初始化时会选中所有的Tab选项卡，且**初始化值**配置项隐藏。只有当组件的**选择类型**为**多选**时，此选项才会显示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156447050112914_zh-CN.png)
+    ![Tab列表初始化全选](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156473720512914_zh-CN.png)
 
 -   **标签默认配置**
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156447050112929_zh-CN.png)
+    ![Tab列表标签默认配置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156473720512929_zh-CN.png)
 
     -   **字号**：组件标签的字号大小。
     -   **字体颜色**：组件标签的字体颜色，可参考[颜色选择器说明](cn.zh-CN/组件指南/配置项说明.md#section_kdw_vj4_t2b)进行修改。
@@ -44,7 +53,7 @@ Tab列表是基础交互组件的一种，支持自定义Tab的颜色、数量�
 
 ## 数据 {#section_llq_l3t_gfb .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156447050212930_zh-CN.png)
+![Tab列表数据面板](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156473720512930_zh-CN.png)
 
 上图中的示例数据如下：
 
@@ -68,6 +77,13 @@ Tab列表是基础交互组件的一种，支持自定义Tab的颜色、数量�
 -   id：Tab选项卡的标签id，**初始化值**配置项需要使用此变量的值，来定义初始化选中的Tab标签。
 -   content：Tab选项卡的标签名称。
 
+|配置项|说明|
+|---|--|
+|**自动更新请求**|勾选后可以设置动态轮询，还可以手动输入轮询的时间频次。|
+|**数据源**|单击**配置数据源**，可在设置数据源页面中修改数据源类型和数据查询代码、预览数据源返回结果以及查看数据响应结果。详情请参见[配置组件数据](../cn.zh-CN/管理组件/配置组件数据.md#)。|
+|**数据过滤器**|单击**添加过滤器**，可在设置数据源页面中配置数据过滤器，详情请参见[组件过滤器使用说明](../cn.zh-CN/管理组件/组件数据过滤器使用说明/使用方法.md#)。|
+|**数据响应结果**|展示数据请求的响应结果。当数据源发生改变时，可单击右侧的**刷新**图标，实时查看数据响应结果。|
+
 ## 交互 {#section_d3q_2sr_gfb .section}
 
 勾选**启用**，开启组件交互功能。当点击Tab标签时，会触发数据请求，抛出回调值，动态加载标签的内容。默认抛出数据中的id和content值，具体配置请参考[组件回调ID配置](../cn.zh-CN/进阶技巧/配置数字翻牌器组件的回调ID.md#)。
@@ -76,7 +92,7 @@ Tab列表是基础交互组件的一种，支持自定义Tab的颜色、数量�
 
 在大屏编辑页面中，单击顶部菜单栏的**配置节点编程**图标，进入Tab列表的节点编程配置页面。可以看到如下图所示的Tab列表的节点编程配置参数。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156447050251021_zh-CN.jpg)
+![Tab列表节点编程参数配置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21835/156473720551021_zh-CN.jpg)
 
 -   **事件** 
     -   **当数据接口请求完成时** 
