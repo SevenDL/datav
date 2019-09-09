@@ -14,7 +14,7 @@
     -   在有HTTPS服务之前，请确保DataV页面是使用HTTP协议打开的（该策略可确保HTTPS网站的安全）。
 4.  填写数据库信息。
 
-    ![添加DataV数据代理服务](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16538/15679989047911_zh-CN.png)
+    ![添加DataV数据代理服务](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16538/15680012317911_zh-CN.png)
 
     |参数|说明|
     |--|--|
